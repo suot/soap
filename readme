@@ -1,0 +1,6 @@
+Steps to write a soap app using spring boot contract first approach:
+https://www.youtube.com/watch?v=ceSqN3CWd14
+1. dependencies: Spring Web Services, wsdl4j, devtools. plugin: xjc -- map xsd to classes, jdk 8 and spring boot 2.1.5.RELEASE. jdk 17 is not compitible with xjc.
+2. create xsd. Running application will automatically generate entitity classes in the loaneligibility folder.
+3. create endpoint and service files. create config file with MessageDispatcherServlet, defaultWsdl11Definition bean (with bean of XsdSchema), and in browser access "http://localhost:8080/ws/loanEligibility.wsdl"
+4. test soap API using soapUI.
